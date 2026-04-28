@@ -1,4 +1,4 @@
-#🧠 Sticky Notes & Books Management API (Assignment 9)
+#🧠 Sticky Notes & Books Management API (Assignment 8)
 
 A comprehensive backend API built with **Node.js**, **Express**, **MongoDB (Mongoose)**. This project demonstrates advanced database management skills, including CRUD operations, Capped Collections, Indexing, and complex Aggregation Pipelines.
 
