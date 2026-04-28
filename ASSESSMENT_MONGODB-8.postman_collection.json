@@ -1,0 +1,185 @@
+{
+  "info": {
+    "_postman_id": "bed632e7-d533-409d-b9bb-a5ca9ecbbe6b",
+    "name": "ASSESSMENT_MONGODB-8",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48833036",
+    "_collection_link": "https://go.postman.co/collection/48833036-bed632e7-d533-409d-b9bb-a5ca9ecbbe6b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Authors Collection",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"George Orwell\",\r\n  \"nationality\": \"British\",\r\n  \"bio\": \"Author of 1984 and Animal Farm\"\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/collection/authors",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "collection",
+            "authors"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Insert One Book",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Brave New World\",\r\n  \"author\": \"Aldous Huxley\",\r\n  \"year\": 1932,\r\n  \"genres\": [\"Science Fiction\", \"Dystopian\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Insert Multiple Books",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"title\": \"Future\",\r\n    \"author\": \"Alice Walker\",\r\n    \"year\": 1982,\r\n    \"genres\": [\"Fiction\", \"Classic\"]\r\n  },\r\n  {\r\n    \"title\": \"The Great Gatsby\",\r\n    \"author\": \"F. Scott Fitzgerald\",\r\n    \"year\": 1925,\r\n    \"genres\": [\"Classic\", \"Drama\"]\r\n  },\r\n  {\r\n    \"title\": \"A Brief History of Time\",\r\n    \"author\": \"Stephen Hawking\",\r\n    \"year\": 1988,\r\n    \"genres\": [\"Science\", \"Non-Fiction\"]\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/batch",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books",
+            "batch"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Insert a New Log",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"action\": \"User Login\",\r\n  \"details\": \"User admin logged into the system\",\r\n  \"timestamp\": \"2023-10-27T10:00:00Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/logs",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "logs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"action\": \"User Login\",\r\n  \"details\": \"User admin logged into the system\",\r\n  \"timestamp\": \"2023-10-27T10:00:00Z\",\r\n  \"title\": \"Brave New World\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/Future",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books",
+            "Future"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "testingOther",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"action\": \"you can edit in url in this file as you like thaks\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

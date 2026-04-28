@@ -1,0 +1,6 @@
+./config/.env.development
+./config/.env.production
+node_modules/
+config/
+.env
+assignment_test.json
